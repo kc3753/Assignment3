@@ -142,4 +142,3 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   spawntimer: 1
   spawnPos: {fileID: 8240590163679517601}
-  currTime: 0
