@@ -28,5 +28,15 @@ public class PlayerMove : MonoBehaviour
         {
             SceneManager.LoadScene("SampleScene");
         }
+        if (other.gameObject.CompareTag("Timer"))
+        {
+                Destroy(other.gameObject);
+                PublicVars.countdownTime += 10;
+        }
+        if (other.gameObject.CompareTag("MinusTimer"))
+        {
+                Destroy(other.gameObject);
+                PublicVars.countdownTime -= 10;
+        }
     }
 }

@@ -10,30 +10,26 @@ public enum CountdownFormatting { DaysHoursMinutesSeconds, HoursMinutesSeconds, 
     public bool showMilliseconds = true; //Whether to show milliseconds in countdown formatting
 
     Text countdownText;
-    double countdownInternal;
     bool countdownOver = false;
 
     // Start is called before the first frame update
     void Start()
     {
         countdownText = GetComponent<Text>();
-        countdownInternal = PublicVars.countdownTime; //Initialize countdown
     }
 
     void FixedUpdate()
     {
-        if (countdownInternal > 0)
+        if (PublicVars.countdownTime > 0)
         {
-            countdownInternal -= Time.deltaTime;
-            PublicVars.countdownTime = countdownInternal;
-            print(PublicVars.countdownTime);
+            PublicVars.countdownTime -= Time.deltaTime;
             //Clamp the timer value so it never goes below 0
-            if (countdownInternal < 0)
+            if (PublicVars.countdownTime < 0)
             {
-                countdownInternal = 0;
+                PublicVars.countdownTime = 0;
             }
 
-            countdownText.text = FormatTime(countdownInternal, countdownFormatting, showMilliseconds);
+            countdownText.text = FormatTime(PublicVars.countdownTime, countdownFormatting, showMilliseconds);
         }
         else
         {
