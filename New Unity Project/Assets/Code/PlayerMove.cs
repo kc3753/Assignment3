@@ -17,10 +17,23 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        
         float hor = joystick.Horizontal;
         float ver = joystick.Vertical;
-        _rigidbody.velocity = new Vector3(-ver,0,hor).normalized * pspeed;
+        Vector3 vec = new Vector3(-ver,0,hor).normalized * pspeed;
+        double zlocation = _rigidbody.position.z;
+
+        //print(zlocation);
+        if(zlocation > 25){
+            if(vec.z > 0){
+                vec.z = 0;
+            }
+        }
+        if(zlocation < -25){
+            if(vec.z < 0){
+                vec.z = 0;
+            }
+        }
+        _rigidbody.velocity =vec;
     }
     void OnTriggerEnter(Collider other)
     {
