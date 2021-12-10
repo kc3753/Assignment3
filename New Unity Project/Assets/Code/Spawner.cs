@@ -5,12 +5,13 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject bulletPrefab;
-    public int spawntimer;
+    public float spawntimer;
     public Transform spawnPos;
     float currTime = 0;
     void spawn(){
 
         GameObject newbullet = Instantiate(bulletPrefab, spawnPos.position, Quaternion.identity);
+        //newbullet.transform.Rotate (new Vector3(0 , 45, 0));
     }
     
 

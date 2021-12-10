@@ -140,5 +140,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 0}
-  spawntimer: 1
+  spawntimer: 3.5
   spawnPos: {fileID: 8240590163679517601}
