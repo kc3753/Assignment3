@@ -22,7 +22,6 @@ public class PlayerMove : MonoBehaviour
         Vector3 vec = new Vector3(-ver,0,hor).normalized * pspeed;
         double zlocation = _rigidbody.position.z;
 
-        //print(zlocation);
         if(zlocation > 25){
             if(vec.z > 0){
                 vec.z = 0;
