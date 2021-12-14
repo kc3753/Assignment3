@@ -7,12 +7,14 @@ using UnityEngine.SceneManagement;
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody _rigidbody;
+    Transform t;
     public float pspeed = 1f;
     public Joystick joystick;
     public
 
     void Start(){
         _rigidbody= GetComponent<Rigidbody>();
+        t = GetComponent<Transform>();
     }
 
     private void Update()
@@ -20,6 +22,9 @@ public class PlayerMove : MonoBehaviour
         float hor = joystick.Horizontal;
         float ver = joystick.Vertical;
         Vector3 vec = new Vector3(-ver,0,hor).normalized * pspeed;
+        if( hor != 0 || ver != 0 ){
+            t.forward = vec;
+        }
         double zlocation = _rigidbody.position.z;
 
         if(zlocation > 25){

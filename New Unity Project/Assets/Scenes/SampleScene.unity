@@ -10083,6 +10083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e20522e944392b43b4d9480f46072c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  t: {fileID: 0}
   pspeed: 5
   joystick: {fileID: 951116341}
 --- !u!1001 &1011181406
@@ -10836,6 +10837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e20522e944392b43b4d9480f46072c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  t: {fileID: 0}
   pspeed: 5
   joystick: {fileID: 951116341}
 --- !u!1001 &1068130787
