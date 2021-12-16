@@ -10,11 +10,20 @@ public class PlayerMove : MonoBehaviour
     Transform t;
     public float pspeed = 1f;
     public Joystick joystick;
+    public GameObject LoseGameUI;
+    public AudioClip Crash;
+    public AudioClip BGM;
+    public bool crashsound;
+    AudioSource audioSource;
     public
 
     void Start(){
         _rigidbody= GetComponent<Rigidbody>();
         t = GetComponent<Transform>();
+        audioSource = GetComponent<AudioSource>();
+        crashsound = false;
+        audioSource.clip = BGM;
+        audioSource.Play();
     }
 
     private void Update()
@@ -43,7 +52,13 @@ public class PlayerMove : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Car"))
         {
-            SceneManager.LoadScene("SampleScene");
+            if (!crashsound)
+            {
+                audioSource.PlayOneShot(Crash);
+                crashsound = true;
+            }
+            
+            LoseGameUI.SetActive(true);
         }
         if (other.gameObject.CompareTag("Timer"))
         {
