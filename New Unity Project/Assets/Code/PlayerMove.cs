@@ -12,8 +12,10 @@ public class PlayerMove : MonoBehaviour
     public Joystick joystick;
     public GameObject LoseGameUI;
     public AudioClip Crash;
+    public AudioClip Train;
     public AudioClip BGM;
     public bool crashsound;
+    public bool trainsound;
     AudioSource audioSource;
     public
 
@@ -22,6 +24,7 @@ public class PlayerMove : MonoBehaviour
         t = GetComponent<Transform>();
         audioSource = GetComponent<AudioSource>();
         crashsound = false;
+        trainsound = false;
         audioSource.clip = BGM;
         audioSource.Play();
     }
@@ -58,6 +61,16 @@ public class PlayerMove : MonoBehaviour
                 crashsound = true;
             }
             
+            LoseGameUI.SetActive(true);
+        }
+        if (other.gameObject.CompareTag("Train"))
+        {
+            if (!trainsound)
+            {
+                audioSource.PlayOneShot(Train);
+                trainsound = true;
+            }
+
             LoseGameUI.SetActive(true);
         }
         if (other.gameObject.CompareTag("Timer"))
