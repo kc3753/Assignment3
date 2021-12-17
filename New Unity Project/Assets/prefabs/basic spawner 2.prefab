@@ -142,6 +142,6 @@ MonoBehaviour:
   Prefab1: {fileID: 1198080351587448, guid: 825fa18a72a60a94c826fb76f103f6b8, type: 3}
   Prefab2: {fileID: 1198080351587448, guid: 825fa18a72a60a94c826fb76f103f6b8, type: 3}
   Prefab3: {fileID: 1198080351587448, guid: 825fa18a72a60a94c826fb76f103f6b8, type: 3}
-  spawntimer: 5
+  spawntimer: 8
   spawnPos: {fileID: 8240590163679517601}
   direction: 0
