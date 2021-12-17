@@ -8,6 +8,7 @@ public class MenuObject : MonoBehaviour
     // Start is called before the first frame update
     public void PlayGame()
     {
+        PublicVars.countdownTime = 600;
         SceneManager.LoadScene("Level 1");
     }
     public void QuitGame()
