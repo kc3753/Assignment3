@@ -31,6 +31,7 @@ public class PlayerMove : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         crashsound = false;
         trainsound = false;
+        audioSource.Stop();
         audioSource.clip = BGM;
         audioSource.Play();
     }
