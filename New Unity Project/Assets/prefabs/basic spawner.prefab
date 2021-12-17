@@ -139,6 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b00b85df1d85dc449d2770c9e2e8cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  Prefab1: {fileID: 1252161886584478, guid: 1bbc73fc330e07c4bafc7099fe33b4bd, type: 3}
+  Prefab2: {fileID: 1252161886584478, guid: 54e007292c53f4a10b2c8710c42a0d5a, type: 3}
+  Prefab3: {fileID: 5352112619491041860, guid: aa71d9df118fc154a858babad5b1a66f, type: 3}
   spawntimer: 3.5
   spawnPos: {fileID: 8240590163679517601}
+  direction: 0
