@@ -14,13 +14,16 @@ public class PlayerMove : MonoBehaviour
     public AudioClip Crash;
     public AudioClip Train;
     public AudioClip BGM;
+    float speed = 0f;
     public bool crashsound;
     public bool trainsound;
     AudioSource audioSource;
-    public
+    public Animator _animator;
+    
 
     void Start(){
         _rigidbody= GetComponent<Rigidbody>();
+        _animator = GetComponent<Animator>();
         t = GetComponent<Transform>();
         audioSource = GetComponent<AudioSource>();
         crashsound = false;
@@ -34,6 +37,8 @@ public class PlayerMove : MonoBehaviour
         float hor = joystick.Horizontal;
         float ver = joystick.Vertical;
         Vector3 vec = new Vector3(-ver,0,hor).normalized * pspeed;
+        speed = (hor* hor + ver * ver);
+        _animator.SetFloat("speed", speed);
         if( hor != 0 || ver != 0 ){
             t.forward = vec;
         }
