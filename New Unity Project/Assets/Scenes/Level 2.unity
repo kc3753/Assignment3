@@ -19170,7 +19170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pspeed: 5
   joystick: {fileID: 1461507102}
-  LoseGameUI: {fileID: 0}
+  LoseGameUI: {fileID: 1461507103}
   Crash: {fileID: 8300000, guid: a0c555dcba71c274b976aa4a85cc9352, type: 3}
   Train: {fileID: 8300000, guid: 71b18bd5dbbd1be4ca7da86b73a70245, type: 3}
   BGM: {fileID: 8300000, guid: 6e543ff40020e6440b81a25a2bd0d61f, type: 3}
@@ -27783,6 +27783,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1461507103 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3322414378252433161, guid: 80c78844573354fd3ac57cae5e4d50e7, type: 3}
+  m_PrefabInstance: {fileID: 1461507101}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1463957247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4267077966516242, guid: ad77b71bebe086d48ab3d1cd35b2746b, type: 3}
