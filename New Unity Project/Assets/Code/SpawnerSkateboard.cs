@@ -11,7 +11,7 @@ public class SpawnerSkateboard : MonoBehaviour
     void spawn(){
 
         GameObject newbullet = Instantiate(bulletPrefab, spawnPos.position, Quaternion.identity);
-        newbullet.transform.Rotate (new Vector3(0 , 45, 0));
+        
     }
     
 
