@@ -1169,7 +1169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 831954079}
 --- !u!1001 &111308047
 PrefabInstance:
@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 1432636590}
 --- !u!1001 &156049722
 PrefabInstance:
@@ -2415,7 +2415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 1613751474}
 --- !u!1001 &211121337
 PrefabInstance:
@@ -6569,7 +6569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 1475366074}
 --- !u!1001 &619354060
 PrefabInstance:
@@ -8724,7 +8724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 126980768}
 --- !u!4 &844350843 stripped
 Transform:
@@ -9215,7 +9215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 1415042002}
 --- !u!1001 &896613686
 PrefabInstance:
@@ -9751,7 +9751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 918740175}
 --- !u!4 &932242251 stripped
 Transform:
@@ -10761,8 +10761,10 @@ MonoBehaviour:
   joystick: {fileID: 951116341}
   LoseGameUI: {fileID: 132578483}
   Crash: {fileID: 8300000, guid: a0c555dcba71c274b976aa4a85cc9352, type: 3}
+  Train: {fileID: 0}
   BGM: {fileID: 8300000, guid: 6e543ff40020e6440b81a25a2bd0d61f, type: 3}
   crashsound: 0
+  trainsound: 0
 --- !u!1001 &1011181406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11518,8 +11520,10 @@ MonoBehaviour:
   joystick: {fileID: 951116341}
   LoseGameUI: {fileID: 0}
   Crash: {fileID: 0}
+  Train: {fileID: 0}
   BGM: {fileID: 0}
   crashsound: 0
+  trainsound: 0
 --- !u!1001 &1068130787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14043,7 +14047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 637799237}
 --- !u!4 &1329058053 stripped
 Transform:
@@ -14975,7 +14979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 1767402865}
 --- !u!1001 &1468641595
 PrefabInstance:
@@ -17828,7 +17832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 346772834}
 --- !u!4 &1762184353 stripped
 Transform:
@@ -19526,7 +19530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
-  spawntimer: 3
+  spawntimer: 2
   spawnPos: {fileID: 1979541137}
 --- !u!1001 &1914143402
 PrefabInstance:
