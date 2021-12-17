@@ -5991,7 +5991,7 @@ Transform:
   - {fileID: 148530782}
   - {fileID: 482846760}
   m_Father: {fileID: 1805875374}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &287356922
 PrefabInstance:
@@ -22500,7 +22500,7 @@ Transform:
   - {fileID: 623989042}
   - {fileID: 1991948083}
   m_Father: {fileID: 1805875374}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1056804697 stripped
 Transform:
@@ -29959,7 +29959,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6ce5137aa70cb1644b5fb516f454f717, type: 2}
+  - {fileID: 2100000, guid: f6ab429a5b257b5498f7dc3c85b16ecc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37891,12 +37891,12 @@ Transform:
   - {fileID: 520235475}
   - {fileID: 1318418766}
   - {fileID: 1092553667}
-  - {fileID: 2145573370}
   - {fileID: 282623065}
+  - {fileID: 2145573370}
+  - {fileID: 1055995469}
   - {fileID: 922672615}
   - {fileID: 1448411264}
   - {fileID: 493145409}
-  - {fileID: 1055995469}
   - {fileID: 2087492161}
   - {fileID: 634160762}
   - {fileID: 1668441072}
@@ -43981,7 +43981,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6ce5137aa70cb1644b5fb516f454f717, type: 2}
+  - {fileID: 2100000, guid: f6ab429a5b257b5498f7dc3c85b16ecc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
