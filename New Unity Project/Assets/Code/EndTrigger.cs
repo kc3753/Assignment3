@@ -11,9 +11,10 @@ public class EndTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            print("collide");
             completeLevelUI.SetActive(true);
-            new WaitForSeconds(5);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+            new WaitForSeconds(3);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

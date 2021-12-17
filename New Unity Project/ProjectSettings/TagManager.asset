@@ -8,6 +8,7 @@ TagManager:
   - Timer
   - MinusTimer
   - Train
+  - LevelGate
   layers:
   - Default
   - TransparentFX

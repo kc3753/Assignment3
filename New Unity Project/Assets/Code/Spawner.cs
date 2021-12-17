@@ -25,7 +25,6 @@ public class Spawner : MonoBehaviour
         GameObject newVehicle = Instantiate(prefabList[prefabIndex], spawnPos.position, Quaternion.identity);
         if (direction == Dir.left)
         {
-            print("Debug");
             newVehicle.transform.Rotate(0, 180, 0);
         }
         //newbullet.transform.Rotate (new Vector3(0 , 45, 0));
