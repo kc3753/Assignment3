@@ -9,10 +9,12 @@ public class EndTrigger : MonoBehaviour
     public GameObject completeLevelUI;
     void onTriggerEnter(Collider other)
     {
+        print("hi");
         if (other.CompareTag("Player"))
         {
             completeLevelUI.SetActive(true);
             new WaitForSeconds(5);
+            print("hello");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
     }
